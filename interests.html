@@ -1,45 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Interests – Vijay John</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interests — Vijay John</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <span class="brand">Vijay John</span>
-      <a href="index.html" class="">Home</a>
-      <a href="interests.html" class="active">Interests</a>
-      <a href="projects.html" class="">Projects</a>
-      <a href="publications.html" class="">Publications</a>
-      <a href="funding.html" class="">Funding</a>
-      <a href="education.html" class="">Education</a>
-      <a href="experience.html" class="">Experience</a>
-  </nav>
 
-  <div class="section">
-    <h2>Research Fields &amp; Interests</h2>
-    <div class="interest-grid">
-      <div class="interest-card"><div class="icon">🧠</div><h3>Multimodal Deep Learning</h3><p>Sensor fusion, missing-modality robustness, cross-modal learning, modality imputation, and multimodal portability.</p></div>
-      <div class="interest-card"><div class="icon">🚘</div><h3>Autonomous Driving</h3><p>Perception, path planning, lane estimation, obstacle detection, and vision-based vehicle control.</p></div>
-      <div class="interest-card"><div class="icon">🤖</div><h3>Robot Perception</h3><p>Humanoid robot vision, human-robot interaction, gesture &amp; sign language recognition, and social robot development.</p></div>
-      <div class="interest-card"><div class="icon">📷</div><h3>Computer Vision</h3><p>Semantic segmentation, object detection, stereo vision, 3D reconstruction, and spatio-temporal learning.</p></div>
-      <div class="interest-card"><div class="icon">📡</div><h3>Sensor Fusion</h3><p>Camera–LIDAR–RADAR–thermal fusion; deep Bayesian inference; automatic sensor calibration without targets.</p></div>
-      <div class="interest-card"><div class="icon">📊</div><h3>Representation Learning</h3><p>Metric learning, embedding learning, distance metric optimisation, self-supervised and transfer learning.</p></div>
-      <div class="interest-card"><div class="icon">🔊</div><h3>Audio-Visual Learning</h3><p>Multimodal transformers for emotion recognition, sound event detection, and co-speech gesture generation.</p></div>
-      <div class="interest-card"><div class="icon">🌐</div><h3>Weak &amp; Semi-Supervised</h3><p>Training action recognition and detection models with sequence-level weak labels to reduce annotation cost.</p></div>
+<nav>
+  <span class="brand">Vijay John</span>
+  <a href="index.html">Home</a>
+  <a href="interests.html" class="active">Interests</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="funding.html">Funding</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+</nav>
+
+<div class="section">
+  <h2>Research Interests</h2>
+
+  <div class="interest-grid">
+    <div class="interest-card">
+      <span class="icon">📷</span>
+      <h3>Multimodal Sensor Fusion</h3>
+      <p>Integrating camera, LIDAR, radar, thermal, and audio data for robust scene understanding in dynamic environments.</p>
     </div>
-    <div style="margin-top:3rem">
-      <h2>Why Collaborate?</h2>
-      <div class="card-grid">
-        <div class="card"><h3>For Industry Partners</h3><ul><li>20+ years of R&amp;D in automotive AI (Denso, Aisin, Toyota, Tier-IV)</li><li>7 granted Japanese patents in autonomous driving</li><li>US$440,000+ in industry-funded research</li><li>Access to LTU students for internships &amp; PoC development</li></ul></div>
-        <div class="card"><h3>For Academic Partners</h3><ul><li>Ph.D. (Dundee), M.S. (CMU), Postdoc (Amsterdam, TTI), Research Scientist (RIKEN)</li><li>International network: RIKEN, TTI, Denso, Astemo, Tier-IV</li><li>Active PhD &amp; graduate supervision; joint publication experience</li><li>NSF/industry grant proposal co-writing welcomed</li></ul></div>
-      </div>
+    <div class="interest-card">
+      <span class="icon">🧩</span>
+      <h3>Missing Modality Learning</h3>
+      <p>Developing frameworks that maintain high accuracy when one or more sensor modalities are unavailable or corrupted.</p>
+    </div>
+    <div class="interest-card">
+      <span class="icon">🚗</span>
+      <h3>Autonomous Driving Perception</h3>
+      <p>Vision-based and multimodal perception for lane detection, obstacle detection, and semantic segmentation in autonomous vehicles.</p>
+    </div>
+    <div class="interest-card">
+      <span class="icon">🤖</span>
+      <h3>Human-Robot Interaction</h3>
+      <p>Multimodal learning for social robots, including person classification, emotion recognition, and gesture understanding.</p>
+    </div>
+    <div class="interest-card">
+      <span class="icon">🧠</span>
+      <h3>Deep Learning Architectures</h3>
+      <p>CNNs, RNNs, Transformers, Vision Transformers, Graph Neural Networks, and metric learning for perception and recognition tasks.</p>
+    </div>
+    <div class="interest-card">
+      <span class="icon">🏃</span>
+      <h3>Human Motion Analysis</h3>
+      <p>Markerless motion capture, gait analysis, abnormal behavior detection, and sign language recognition using multi-view video.</p>
+    </div>
+    <div class="interest-card">
+      <span class="icon">🔉</span>
+      <h3>Audio-Visual Learning</h3>
+      <p>Transformer-based frameworks for audio-visual emotion recognition, sound event detection, and speech-gesture generation.</p>
+    </div>
+    <div class="interest-card">
+      <span class="icon">🛰️</span>
+      <h3>Sensor Calibration</h3>
+      <p>Automatic extrinsic calibration of LIDAR-stereo and non-overlapping camera networks using probabilistic and optimization methods.</p>
+    </div>
+    <div class="interest-card">
+      <span class="icon">📡</span>
+      <h3>Weak & Self-Supervised Learning</h3>
+      <p>Leveraging sequence-level weak labels and self-supervised techniques to reduce annotation burden for frame-level perception tasks.</p>
     </div>
   </div>
-  <footer>
-    &copy; 2026 Vijay John &nbsp;&middot;&nbsp; Associate Professor, Lawrence Technological University
-    &nbsp;&middot;&nbsp; <a href="mailto:vjohn@ltu.edu">vjohn@ltu.edu</a>
-  </footer>
+
+  <div class="collab-box" style="margin-top:3rem;">
+    <h2>Open to Collaboration</h2>
+    <p>I actively seek partnerships with researchers and industry partners in autonomous systems, robotics, and multimodal AI.</p>
+    <a href="mailto:vjohn@ltu.edu" class="btn btn-primary">vjohn@ltu.edu</a>
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 Vijay John &nbsp;|&nbsp;
+  <a href="mailto:vjohn@ltu.edu">vjohn@ltu.edu</a> &nbsp;|&nbsp;
+  Lawrence Technological University, Southfield, MI
+</footer>
+
 </body>
 </html>

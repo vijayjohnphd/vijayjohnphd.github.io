@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Vijay John</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .research-section { max-width: 860px; margin: 0 auto; padding: 3rem 2rem; }
+    .research-section h1 {
+      font-family: var(--font-head);
+      font-size: 1.6rem; color: var(--navy);
+      margin-bottom: 0.3rem;
+    }
+    .research-section .subtitle {
+      font-size: 0.8rem; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.08em;
+      margin-bottom: 2rem;
+    }
+    .rs-h2 {
+      font-family: var(--font-head);
+      font-size: 1.25rem; font-weight: 700;
+      color: var(--navy);
+      margin: 2.8rem 0 0.6rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .rs-h3 {
+      font-family: var(--font-head);
+      font-size: 1.05rem; font-weight: 700;
+      color: var(--navy);
+      margin: 2rem 0 0.4rem;
+    }
+    .rs-h4 {
+      font-family: var(--font-head);
+      font-size: 0.95rem; font-weight: 700;
+      color: var(--accent);
+      margin: 1.5rem 0 0.4rem;
+    }
+    .rs-p {
+      font-size: 0.9rem; color: var(--text);
+      line-height: 1.85; margin-bottom: 1rem;
+    }
+    .rs-figure {
+      margin: 1.8rem auto;
+      text-align: center;
+    }
+    .rs-figure img {
+      max-width: 100%;
+      border: 1px solid #dde2ec;
+      display: block;
+      margin: 0 auto;
+    }
+    .rs-figure.w80 img  { width: 80%; }
+    .rs-figure.w100 img { width: 100%; }
+    .rs-figure.w70 img  { width: 70%; }
+    .rs-subfig {
+      display: flex; gap: 1.2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 1.8rem 0;
+    }
+    .rs-subfig figure {
+      flex: 1 1 45%;
+      max-width: 48%;
+      text-align: center;
+    }
+    .rs-subfig figure img {
+      width: 100%;
+      border: 1px solid #dde2ec;
+    }
+    .rs-subfig figure figcaption,
+    .rs-figure figcaption {
+      font-size: 0.78rem; color: var(--muted);
+      margin-top: 0.5rem; line-height: 1.5;
+      font-style: italic;
+    }
+    .rs-ul {
+      font-size: 0.88rem; color: var(--muted);
+      line-height: 1.8;
+      padding-left: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    .rs-ul li { margin-bottom: 0.3rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <span class="brand">Vijay John</span>
+  <a href="index.html">Home</a>
+  <a href="interests.html">Interests</a>
+  <a href="research.html" class="active">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="funding.html">Funding</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+</nav>
+
+<main class="research-section">
+
+  <h1>Research Statement</h1>
+  <div class="subtitle">Vijay John &nbsp;·&nbsp; Lawrence Technological University</div>
+
+  <div class="rs-h2">Overview</div>
+
+  <div class="rs-figure w80">
+    <img src="OverviewResearch.png" alt="Overview of research profile" />
+    <figcaption> An overview of my research profile.</figcaption>
+  </div>
+
+  <p class="rs-p">
+    My research focuses on developing innovative solutions to enhance <strong>multimodal perception and learning</strong> for intelligent systems. I am particularly interested in addressing the challenges of missing modality in multimodal learning, sensor fusion, robust perception across multiple sensor modalities, and human motion analysis. My contributions span a wide range of domains, including human-robot interaction, intelligent mobility, and autonomous driving, where I have applied deep learning and probabilistic methods to integrate and interpret data from visible, thermal, audio, radar, and LIDAR sensors. Through my work, I aim to enable more robust and adaptive intelligent systems, particularly in the fields of robotics, autonomous vehicles, and human-computer interaction.
+  </p>
+
+  <div class="rs-h2">Summary of Current and Past Research</div>
+
+  <div class="rs-h3">Guardian Robot Research <span style="font-weight:400; font-size:0.85rem; color:var(--muted);">(RIKEN, 2021 – 2025)</span></div>
+
+  <p class="rs-p">
+    At RIKEN, I was involved in the Guardian Robot Research project, a collaborative effort involving six teams. The objective is to develop a social robot with human-like characteristics, with my contributions focusing on multimodal learning — addressing the missing modality problem, weak supervised multimodal learning, and multimodal perception.
+  </p>
+
+  <div class="rs-h4">Missing Modality Problem in Multimodal Learning</div>
+
+  <p class="rs-p">
+    The research addresses the missing modality problem in multimodal person classification and recognition tasks, where deep learning-based frameworks often require the presence of all modalities to achieve state-of-the-art accuracy. However, in real-world applications, there is the possibility of missing modalities due to conditions such as sensor malfunction or failure, resulting in missing data. An overview of the missing modality problem is presented below.
+  </p>
+
+  <div class="rs-figure w100">
+    <img src="Overview.png" alt="Overview of the missing modality problem" />
+    <figcaption> An overview of the missing modality problem.</figcaption>
+  </div>
+
+  <p class="rs-p">
+    In this research we formulate novel deep learning frameworks using metric learning, cascade learning, transfer learning, and progressive learning to address the missing modality problem. Using metric learning, we proposed novel latent loss functions to obtain latent embeddings for multimodal data even when one or more modalities are missing.
+  </p>
+
+  <div class="rs-figure w70">
+    <img src="MissingModalityJointLoss.png" alt="Novel latent loss functions" />
+    <figcaption> Illustration of the novel latent loss functions proposed to address the missing modality problem.</figcaption>
+  </div>
+
+  <p class="rs-p">
+    We also developed a cascaded framework comprising three deep learning models that utilize metric learning to generate complete multimodal data from incomplete inputs in the latent feature space. Additionally, <strong>KModNet</strong> was proposed to tackle both the missing modality and multimodal portability problems, enabling classification using any subset of available modalities. An audio-visual person recognition framework was also introduced, leveraging audio-based person attributes and a multi-head attention transformer to enhance recognition accuracy in the absence of visual data.
+  </p>
+
+  <div class="rs-h4">Multimodal Weak Supervised Learning</div>
+
+  <p class="rs-p">
+    Training for multimodal perception tasks typically requires annotating frame-level strong labels, which is a laborious and challenging task. Conversely, annotating sequence-level weak labels is comparatively simpler. However, employing weak labels for training a multimodal perception framework poses challenges. We proposed a novel framework for training video-based frame-level action recognition models utilizing sequence-level weak labels. Sequence-level annotations are used to generate view-specific latent embeddings, which significantly enhance the performance of downstream models for action recognition and detection tasks. The framework incorporates a unique latent loss function that demonstrated improved accuracy despite the limited supervision provided by weak labels.
+  </p>
+
+  <div class="rs-figure w80">
+    <img src="Perception.png" alt="Overview of vision-based perception problems" />
+    <figcaption>An overview of the different vision-based perception problems addressed in my research.</figcaption>
+  </div>
+
+  <div class="rs-h4">Multimodal Perception for Human-Robot Interaction</div>
+
+  <p class="rs-p">
+    Our research in human-robot interaction focuses on integrating visible cameras, thermal cameras, and microphones to improve person classification and emotion recognition. We developed a visible-thermal person classifier that employs transfer learning, knowledge distillation, and vision transformers. The classifier utilizes teacher models to guide the multimodal classifier, incorporating a novel loss function for knowledge distillation. Furthermore, a transformer-based model for audio-visual emotion recognition was created, featuring audio self-attention, video self-attention, and audio-video cross-attention mechanisms to effectively combine modalities.
+  </p>
+
+  <div class="rs-h3">Learning for Intelligent Mobility Applications <span style="font-weight:400; font-size:0.85rem; color:var(--muted);">(2014 – 2021)</span></div>
+
+  <p class="rs-p">
+    As part of a collaborative effort involving Toyota Technological Institute, Denso, Nippon Soken, Aisin, Toyota R&amp;D Labs, and Tier IV, our research in intelligent mobility focused on vision-based perception and the integration of diverse sensor modalities for autonomous driving applications. I was the principal contributor in all aforementioned projects.
+  </p>
+
+  <div class="rs-h4">Vision-based Perception</div>
+
+  <p class="rs-p">
+    For the different road environment perception problems, we utilised deep learning and observed state-of-the-art detection results. For pedestrian, traffic light, and lane detection, we achieve nearly 100% detection accuracy with very few false positives. In the case of lane detection, using our proposed method we estimate the ego-lane image location even under lane occlusion and absence of lane markers. We have also developed a road surface and small object detection algorithm using convolutional neural networks, where geometric and spatial priors are incorporated to enhance classification accuracy.
+  </p>
+
+  <div class="rs-h4">Multimodal Learning</div>
+
+  <p class="rs-p">
+    We developed deep sensor fusion frameworks, namely <strong>RVNet</strong> and <strong>SO-Net</strong>, which combined radar and appearance information to enhance vehicle detection and semantic segmentation. Additionally, we advanced methods for integrating visible and thermal cameras for scene forecasting and pedestrian behavior estimation, while formulating sensor fusion techniques to integrate LIDAR and stereo cameras, achieving improved depth precision and predicting lane markers in complex driving scenarios. Sample results of the fusion frameworks are presented below.
+  </p>
+
+  <div class="rs-subfig">
+    <figure>
+      <img src="ChiNet.png" alt="ChiNet results" />
+      <figcaption>(a) ChiNet — stereo depth and appearance fusion for semantic segmentation and lane estimation.</figcaption>
+    </figure>
+    <figure>
+      <img src="RVNet.png" alt="RVNet results" />
+      <figcaption>(b) RVNet — radar and monocular camera fusion for real-time obstacle detection.</figcaption>
+    </figure>
+  </div>
+  <p style="font-size:0.78rem; color:var(--muted); text-align:center; margin-top:-1rem; margin-bottom:1.5rem; font-style:italic;">
+    Fig. 5 — Results of the ChiNet and RVNet sensor fusion frameworks.
+  </p>
+
+  <div class="rs-h4">Gesture Recognition and Vehicle Localization</div>
+
+  <p class="rs-p">
+    In a project aimed at enhancing touchless automotive user interfaces, we developed a deep learning and sparse modeling framework for gesture recognition from video data, facilitating intuitive user interaction in vehicles. Our efforts also focused on localizing autonomous vehicles using stereo vision-based depth information, introducing a novel particle swarm optimization framework in conjunction with Kalman filtering. Moreover, methods for generating virtual depth images from 3D point clouds were proposed, significantly improving localization accuracy in complex environments.
+  </p>
+
+  <div class="rs-h3">Automatic Calibration of Multiple Non-overlapping FOV Cameras <span style="font-weight:400; font-size:0.85rem; color:var(--muted);">(2011 – 2013)</span></div>
+
+  <p class="rs-p">
+    In collaboration with the University of Amsterdam, Philips Research, and Eagle Vision, we addressed the extrinsic calibration of camera networks with non-overlapping fields of view. Our work involved developing a probabilistic approach for appearance-based person re-identification across camera networks, accounting for varying illumination and camera gain. An automatic camera calibration algorithm was introduced, leveraging multiple trajectories and particle swarm optimization, coupled with a Bayesian framework to correct calibration errors.
+  </p>
+
+  <div class="rs-h3">Human Motion Analysis using Multiple Cameras <span style="font-weight:400; font-size:0.85rem; color:var(--muted);">(PhD, 2007 – 2011)</span></div>
+
+  <p class="rs-p">
+    For my PhD thesis at the University of Dundee, we focused on markerless human motion tracking and classification using multiple-view video sequences. We developed a method employing particle swarm optimization and charting to analyze human motion without physical markers. This research contributed to practical applications of human motion analysis across various domains and included the maintenance and updating of the motion capture studio, encompassing software development, synchronized camera systems, and professional lighting control. This research was featured in <em>Science Scotland</em>, Royal Society of Edinburgh.
+  </p>
+
+  <div class="rs-h2">Future Research Directions</div>
+
+  <p class="rs-p">
+    My future research endeavours to extend the literature in multimodal learning in robotics, intelligent mobility, and human motion analysis. As intelligent systems evolve to operate autonomously in complex, dynamic environments, it becomes imperative to develop algorithms capable of utilising multimodal data.
+  </p>
+
+  <div class="rs-h3">Multimodal Learning</div>
+
+  <p class="rs-p">
+    I intend to further explore methods for overcoming the missing modality problem, allowing systems to function optimally even when sensor data is noisy or incomplete. We will explore graph neural networks, representation learning, self-supervised learning, and metric techniques to integrate information from various sensor modalities, including visible, thermal, and audio data.
+  </p>
+
+  <div class="rs-h4">Multi-view Multimodal Perception</div>
+
+  <p class="rs-p">
+    Using data obtained from multiple multimodal sensors for perception is a challenging task. We will solve perception problems using multiple sensors while addressing the <em>missing modality problem</em>, and continue research on weak supervised learning. For multi-view multimodal datasets, it is difficult to annotate modality-specific frame-level labels for various perception tasks; however, it is easier to obtain sequence-level weak labels. I will focus on developing algorithms to utilise the <em>easily available weak labels for frame-level perception tasks</em>.
+  </p>
+
+  <div class="rs-h4">Sign Language Recognition</div>
+
+  <p class="rs-p">
+    Sign language recognition using multimodal data is a challenging task within human motion analysis. The research will focus on interpreting complex gestures using multiple sensor inputs — including visual and audio data — while accounting for temporal dependencies. We will also focus on generating sign language gestures using audio and text inputs.
+  </p>
+
+  <div class="rs-h3">Intelligent Mobility</div>
+
+  <p class="rs-p">
+    Perception is a critical task for autonomous driving. Recent deep learning frameworks using vision sensors report state-of-the-art performance. However, their performance is limited by appearance variations, illumination variations, and occlusion. To address these issues, a sensor fusion-based approach will be adopted where the complementary advantages of different sensors are incorporated in the perception tasks.
+  </p>
+
+  <div class="rs-h3">Human Motion Analysis</div>
+
+  <p class="rs-p">
+    Perception of human motion from video sequences is an important research problem with numerous applications in security, surveillance, biomedical, animation, and autonomous driving. I will investigate the problems of <strong>abnormal behaviour analysis</strong> and <strong>gait analysis</strong>. Automatically identifying suspicious human behaviour requires implementing: human detection; human tracking; human re-identification across networks; and identifying abnormal behaviour. Key challenges include variation in appearance owing to body shape and clothing, illumination variations, motion variations, and occlusions.
+  </p>
+
+</main>
+
+<footer>
+  &copy; 2026 Vijay John &nbsp;|&nbsp;
+  <a href="mailto:vjohn@ltu.edu">vjohn@ltu.edu</a> &nbsp;|&nbsp;
+  Lawrence Technological University
+</footer>
+
+</body>
+</html>

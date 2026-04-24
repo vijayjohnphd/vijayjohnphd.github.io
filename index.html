@@ -1,53 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Home – Vijay John</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vijay John, PhD — Lawrence Technological University</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <span class="brand">Vijay John</span>
-      <a href="index.html" class="active">Home</a>
-      <a href="interests.html" class="">Interests</a>
-      <a href="projects.html" class="">Projects</a>
-      <a href="publications.html" class="">Publications</a>
-      <a href="funding.html" class="">Funding</a>
-      <a href="education.html" class="">Education</a>
-      <a href="experience.html" class="">Experience</a>
-  </nav>
 
-  <header class="hero">
-    <img src="Vijay_Bio.png" alt="Vijay John"/>
-    <div class="hero-text">
-      <h1>Vijay John</h1>
-      <p class="title">Associate Professor &nbsp;·&nbsp; Lawrence Technological University &nbsp;·&nbsp; Southfield, MI</p>
-      <p>I develop <strong>multimodal deep learning systems</strong> that let robots and autonomous vehicles perceive the world reliably — even when sensors fail or data is incomplete. My work spans sensor fusion (camera, LIDAR, RADAR, thermal), missing-modality robustness, human-robot interaction, and spatio-temporal learning.</p>
-      <div class="hero-links">
-        <a class="btn btn-primary" href="mailto:vjohn@ltu.edu">&#9993;&nbsp; Collaborate</a>
-        <a class="btn btn-outline"  href="publications.html">Publications</a>
-        <a class="btn btn-outline"  href="projects.html">Research</a>
-      </div>
-    </div>
-  </header>
+<nav>
+  <span class="brand">Vijay John</span>
+  <a href="index.html" class="active">Home</a>
+  <a href="interests.html">Interests</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="funding.html">Funding</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+</nav>
 
-  <div class="section">
-    <h2>Research Snapshot</h2>
-    <div class="card-grid">
-      <div class="card"><h3>Multimodal Learning</h3><p> Frameworks that perform perception using <em>any</em> subset of sensor modalities — making perception robust when cameras, microphones, or depth sensors are absent.</p></div>
-      <div class="card"><h3>Autonomous Driving Perception</h3><p>RVNet, SO-Net, ChiNet, PsiNet — deep fusion frameworks for obstacle detection, lane estimation, and semantic segmentation across camera, radar, and LIDAR inputs.</p></div>
-      <div class="card"><h3>Human-Robot Interaction</h3><p>Multimodal person classification, audio-visual emotion recognition, and gesture/sign language recognition for next-generation social robots (RIKEN Guardian Robot project).</p></div>
-      <div class="card"><h3>Sensor Fusion &amp; Calibration</h3><p>Automatic extrinsic calibration of LIDAR–stereo pairs and non-overlapping camera networks without calibration targets, enabling rapid deployment in real environments.</p></div>
-    </div>
-    <div class="collab-box">
-      <h2>Open to Collaboration</h2>
-      <p>I welcome partnerships with <strong>industry</strong> (automotive, robotics, healthcare) and <strong>academic</strong> groups on funded research, joint publications, and student co-supervision.</p>
-      <a class="btn btn-primary" href="mailto:vjohn@ltu.edu">Get in Touch</a>
+<section class="hero">
+  <img src="Vijay_Bio.png" alt="Vijay John" />
+  <div class="hero-text">
+    <h1>Vijay John</h1>
+    <div class="title">Associate Professor of Computer Science &nbsp;·&nbsp; Lawrence Technological University</div>
+    <p>
+      My research develops robust multimodal perception and learning for intelligent systems —
+      addressing missing modality, sensor fusion, and deep learning across camera, LIDAR, radar,
+      thermal, and audio sensors. Applications span autonomous driving, humanoid robotics,
+      and human motion analysis.
+    </p>
+    <div class="hero-links">
+      <a href="research.html" class="btn btn-primary">Research</a>
+      <a href="publications.html" class="btn btn-outline">Publications</a>
+      <a href="https://scholar.google.com/citations?user=Wv71RXYAAAAJ&hl=en" target="_blank" class="btn btn-outline">Google Scholar ↗</a>
+      <a href="CV_2026.pdf" target="_blank" class="btn btn-outline">CV ↗</a>
     </div>
   </div>
-  <footer>
-    &copy; 2026 Vijay John &nbsp;&middot;&nbsp; Associate Professor, Lawrence Technological University
-    &nbsp;&middot;&nbsp; <a href="mailto:vjohn@ltu.edu">vjohn@ltu.edu</a>
-  </footer>
+</section>
+
+<div class="section">
+  <h2>Research Highlights</h2>
+  <div class="card-grid">
+    <div class="card">
+      <div class="meta">Missing Modality</div>
+      <h3>Robust Multimodal Learning</h3>
+      <p>KModNet and cascaded frameworks that classify using <em>any</em> subset of sensor modalities — making perception robust when cameras, microphones, or depth sensors are absent.</p>
+      <span class="tag">Metric Learning</span>
+      <span class="tag">KModNet</span>
+      <span class="tag">Transformers</span>
+    </div>
+    <div class="card">
+      <div class="meta">Intelligent Mobility</div>
+      <h3>Deep Sensor Fusion</h3>
+      <p>RVNet, SO-Net, ChiNet, PsiNet — deep fusion frameworks for obstacle detection, lane estimation, and semantic segmentation across camera, radar, and LIDAR.</p>
+      <span class="tag">RVNet</span>
+      <span class="tag">ChiNet</span>
+      <span class="tag">LIDAR-Radar</span>
+    </div>
+    <div class="card">
+      <div class="meta">Humanoid Robotics</div>
+      <h3>Guardian Robot (RIKEN)</h3>
+      <p>Multimodal person classification, audio-visual emotion recognition, and gesture recognition for next-generation social robots.</p>
+      <span class="tag">Emotion Recognition</span>
+      <span class="tag">HRI</span>
+      <span class="tag">Weak Supervision</span>
+    </div>
+    <div class="card">
+      <div class="meta">Sensor Calibration</div>
+      <h3>Automatic Multi-sensor Calibration</h3>
+      <p>Automatic extrinsic calibration of LIDAR–stereo pairs and non-overlapping camera networks without calibration targets, enabling rapid deployment.</p>
+      <span class="tag">Bayesian Inference</span>
+      <span class="tag">PSO</span>
+      <span class="tag">Re-ID</span>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="border-top:1px solid var(--rule); padding-top:2.5rem;">
+  <h2>Recent News</h2>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-meta">Apr 2026</div>
+      <h3>Two journal papers published in <em>Pattern Recognition</em> and <em>Multimedia Tools and Applications</em></h3>
+    </div>
+    <div class="tl-item">
+      <div class="tl-meta">Jan 2026</div>
+      <h3>Paper accepted at IEEE/CVF WACV 2026 — view-aware cross-modal distillation</h3>
+    </div>
+    <div class="tl-item">
+      <div class="tl-meta">2025</div>
+      <h3>🏆 Best Student Paper — MultiSensor-Home, IEEE FG 2025</h3>
+    </div>
+    <div class="tl-item">
+      <div class="tl-meta">2025</div>
+      <h3>🏆 Most Influential Paper of the Decade — MVA 2025</h3>
+    </div>
+    <div class="tl-item">
+      <div class="tl-meta">Aug 2025</div>
+      <h3>Joined Lawrence Technological University as Tenure-track Associate Professor of Computer Science</h3>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="collab-box">
+    <h2>Collaborate</h2>
+    <p>I welcome partnerships with industry (automotive, robotics, healthcare) and academic groups on funded research, joint publications, and student co-supervision.</p>
+    <a href="mailto:vjohn@ltu.edu" class="btn btn-primary">vjohn@ltu.edu</a>
+    <a href="https://scholar.google.com/citations?user=Wv71RXYAAAAJ&hl=en" target="_blank" class="btn btn-outline" style="margin-left:0.6rem;">Google Scholar ↗</a>
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 Vijay John &nbsp;|&nbsp;
+  <a href="mailto:vjohn@ltu.edu">vjohn@ltu.edu</a> &nbsp;|&nbsp;
+  Lawrence Technological University, Southfield, MI
+</footer>
+
 </body>
 </html>
